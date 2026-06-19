@@ -9,5 +9,9 @@ def send_message(phone: str, message: str):
         "message": message
     }
     
-    response = requests.post(url, json=payload)
-    return response.json()
+    try:
+        response = requests.post(url, json=payload)
+        return response.json()
+    except Exception as e:
+        print(f"Erro ao enviar mensagem: {e}")
+        return None
