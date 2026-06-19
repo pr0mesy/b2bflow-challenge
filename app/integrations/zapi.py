@@ -11,4 +11,4 @@ def send_message(phone: str, message: str):
     }
     
     response = requests.post(url, json=payload)
-    return response.json(
+    return response.json()
