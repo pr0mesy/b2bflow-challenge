@@ -8,3 +8,4 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 ZAPI_INSTANCE_ID = os.getenv("ZAPI_INSTANCE_ID")
 ZAPI_TOKEN = os.getenv("ZAPI_TOKEN")
 
+
