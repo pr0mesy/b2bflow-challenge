@@ -24,7 +24,7 @@ E depois insira de pelo menos 1 contato, com o telefone no formato 55DDDNUMERO (
 
 Após criar sua conta no Z-API, escaneie o QR Code com o seu WhatsApp, isso criará uma instância.
 
-## Configurando o projeto (1/3)
+## Configurando o projeto
 
 Primeiro, clone o repositório. Rode:
 
