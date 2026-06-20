@@ -18,7 +18,7 @@ CREATE TABLE contacts (
 );
 ```
 
-E depois insira de pelo menos 1 contato, com o telefone no formato 55DDDNUMERO (ex: `5571912345678`).
+E depois insira de pelo menos 1 contato (ou 3, como foi solicitado), com o telefone no formato 55DDDNUMERO (ex: `5571912345678`).
 
 ## Criação da instância (Z-API)
 
