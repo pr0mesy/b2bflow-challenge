@@ -4,8 +4,7 @@ Desafio feito em Python, onde é preciso ler contatos vindos do Supabase e envia
 
 ## Requisitos
 
-Criar conta em `https://supabase.com`
-Criar conta em `https://app.z-api.io`
+Criar conta em `https://supabase.com` e `https://app.z-api.io`
 
 ## Setup da tabela (Supabase)
 
@@ -25,7 +24,15 @@ E depois insira de pelo menos 1 contato, com o telefone no formato 55DDDNUMERO (
 
 Após criar sua conta no Z-API, escaneie o QR Code com o seu WhatsApp, isso criará uma instância.
 
-## Variáveis de ambiente
+## Configurando o projeto (1/3)
+
+Primeiro, clone o repositório. Rode:
+
+```bash
+git clone https://github.com/pr0mesy/b2bflow-challenge
+```
+
+### Variáveis de ambiente
 
 Crie um arquivo `.env` na raiz com base no `.env.example`:
 
@@ -40,7 +47,7 @@ ZAPI_TOKEN=
 - `SUPABASE_KEY`: Encontrado em Project Settings -> API Keys (buscar anon public)
 - `ZAPI_INSTANCE_ID` e `ZAPI_TOKEN`: São encontrados no painel, assim criar sua instância na Z-API
 
-## Como rodar
+### Como rodar
 
 ```bash
 python -m venv venv
