@@ -11,13 +11,13 @@ Criar conta em `https://app.z-api.io`
 
 No SQL Editor do Supabase, rode:
 
-\`\`\`sql
+```sql
 CREATE TABLE contacts (
     id SERIAL PRIMARY KEY,
     name TEXT NOT NULL,
     phone TEXT NOT NULL
 );
-\`\`\`
+```
 
 E depois insira de pelo menos 1 contato, com o telefone no formato 55DDDNUMERO (ex: `5571912345678`).
 
@@ -29,12 +29,12 @@ Após criar sua conta no Z-API, escaneie o QR Code com o seu WhatsApp, isso cria
 
 Crie um arquivo `.env` na raiz com base no `.env.example`:
 
-\`\`\`
+```
 SUPABASE_URL=
 SUPABASE_KEY=
 ZAPI_INSTANCE_ID=
 ZAPI_TOKEN=
-\`\`\`
+```
 
 - `SUPABASE_URL`: Encontrado em Project Overview, logo abaixo do nome do projeto
 - `SUPABASE_KEY`: Encontrado em Project Settings -> API Keys (buscar anon public)
@@ -42,12 +42,12 @@ ZAPI_TOKEN=
 
 ## Como rodar
 
-\`\`\`bash
+```bash
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python -m app.main
-\`\`\`
+```
 
 ## Tecnologias
 
