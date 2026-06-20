@@ -4,11 +4,10 @@ from app.logger import logger
 
 def send_messages_to_contacts():
     contacts = get_contacts()
-    
+
+    # usando o objeto contact, temos acesso direto aos atributos name e phone
     for contact in contacts:
-        name = contact["name"]
-        phone = contact["phone"]
-        message = f"Olá, {name} tudo bem com você?"
-        
-        send_message(phone, message)
-        logger.info(f"Mensagem enviada para {name}")
+        message = f"Olá, {contact.name} tudo bem com você?"
+
+        send_message(contact.phone, message)
+        logger.info(f"Mensagem enviada para {contact.name}")
